@@ -33,7 +33,7 @@ Before you write any code:
 - Take a look at the implementation of [createLogSocket](https://github.com/rsyslog/rsyslog/blob/master/plugins/imuxsock/imuxsock.c#L510).
 - Don't be afraid if you do not fully understand it.
 - First, you need to unlink the existing ```/dev/log``` socket with ```unlink /dev/log```
-- Stop ```rsyslog``` and ```systemd-journald```
+- Stop ```rsyslog``` and ```systemd-journald``` via ```systemctl stop rsyslog``` and ```systemctl stop systemd-journald```
 
 ### Example output
 Terminal 1:
