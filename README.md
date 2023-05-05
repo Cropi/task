@@ -5,7 +5,7 @@
 1st part:
 - Create a C program, which will create(own) and will read from the /dev/log socket
 - It must accept any number of parameters
-- Each parameter will be a file path to which will write certain information (see below)
+- Each parameter will be a file path to which the program will write certain information (see below)
 - Each log that is read from the socket will be writen to STDOUT as well
 - Due to the previous requirements, it must be executed as root
 - The program won't exit unless it receives a SIGINT signal
