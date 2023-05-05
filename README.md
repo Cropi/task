@@ -38,16 +38,14 @@ Before you write any code:
 ### Example output
 Terminal 1:
 ```
-~/Work/tasks/c-task(master*) » sudo ./logging-daemon /tmp/output1.log /tmp/output2.log /tmp/output3.log
-[sudo] password for rsroka:
-<86>May 14 19:02:42 sudo: pam_unix(sudo-i:session): session closed for user root
-<13>May 14 19:02:59 rsroka: some message
-<13>May 14 19:03:07 rsroka: some message
-<13>May 14 19:03:07 rsroka: some message
-<13>May 14 19:03:08 rsroka: some message
-<13>May 14 19:03:14 rsroka: some other message
-<13>May 14 19:03:15 rsroka: some other message
-4 --> rsroka: some message
+alakatos@fedora  ~/c-task   master  sudo ./logging-daemon /tmp/output1.log /tmp/output2.log /tmp/output3.log
+<13>May  5 15:20:08 alakatos: some message
+<13>May  5 15:20:12 alakatos: some message
+<13>May  5 15:20:12 alakatos: some message
+<13>May  5 15:20:16 alakatos: some message
+<13>May  5 15:20:23 alakatos: some other message
+<13>May  5 15:20:24 alakatos: some other message
+4 --> alakatos: some message
 The END!
 ```
 
