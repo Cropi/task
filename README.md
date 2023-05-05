@@ -30,7 +30,7 @@ systemctl start rsyslog
 Rsyslog runs in the background as a daemon. You can verify it with the ```systemctl status rsyslog``` command. With the default configuration, it reads the /dev/log socket and writes each message to ```/var/log/messages```. You can test it with the ```logger(1)```,e.g.: ```logger "This is my test messages"``` and check the content of ```/var/log/messages```.
 
 Before you write any code:
-- Take a look at the implementation of [createLogSocket](https://github.com/rsyslog/rsyslog/blob/master/plugins/imuxsock/imuxsock.c#L510).
+- Take a look at the implementation of [createLogSocket](https://github.com/rsyslog/rsyslog/blob/master/plugins/imuxsock/imuxsock.c#L510). Feel free to use it for inspiration.
 - Don't be afraid if you do not fully understand it.
 - First, you need to unlink the existing ```/dev/log``` socket with ```unlink /dev/log```
 - Stop ```rsyslog``` and ```systemd-journald``` via ```systemctl stop rsyslog``` and ```systemctl stop systemd-journald```
