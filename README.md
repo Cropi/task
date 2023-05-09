@@ -14,9 +14,9 @@
 - Detection of reccurring messages.
 - If the daemon is stopped (receives a SIGINT), it will write to stdout:
   - the most frequented message
-  - and a number indicating how message was detected
+  - and a number indicating how many messages were detected
 
-Potential enhancements:
+Potential enhancements but are NOT required:
 - use of CMake in the project
 - "-f" option for fork mode
 
